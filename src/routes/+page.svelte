@@ -29,7 +29,7 @@
 	{:else}
 	  <Dashboard/>
 	{/if}
-  </main>
+</main>
 
 
 
