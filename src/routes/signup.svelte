@@ -15,9 +15,6 @@
         try {
             const response = await fetch(SIGNUP , {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
                 body: JSON.stringify({
                     Firstname,
                     Lastname,
@@ -37,7 +34,8 @@
             isSubmitted = true;
 
         } catch (error) {
-            console.error("Error:", error);
+            console.error("Error at :", error);
+
         }
     } else {
         console.error("Empty fields");
